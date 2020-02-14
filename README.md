@@ -22,7 +22,7 @@ if [ "$_IP" ]; then
 fi
 
 
-echo "XXNET IPTABLES"
+echo "GOOGLE IPTABLES"
 iptables -t nat -F &
 iptables -t nat -N REDSOCKS &
 
@@ -75,5 +75,5 @@ iptables -A OUTPUT -p udp -d 127.0.0.0/8 -j ACCEPT &
 iptables -A OUTPUT -p udp -d 45.89.228.0/24 -j ACCEPT &
 iptables -A OUTPUT -p udp -j DROP &
 
-echo "XXNET IPTABLES ADDED"
+echo "GOOGLE IPTABLES ADDED"
 ```
