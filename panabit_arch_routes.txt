@@ -1,5 +1,5 @@
-default via 192.168.4.1 dev wlp0s29f7u4 metric 100
 default via 192.168.1.1 dev enp4s0 src 192.168.1.13 metric 101
+default via 192.168.4.1 dev wlp0s29f7u4 metric 103
 2.56.240.163 via 192.168.1.1 dev enp3s0
 10.255.255.0/30 dev enp7s0 proto kernel scope link src 10.255.255.1
 45.89.228.109 via 192.168.1.1 dev enp2s0
@@ -7,4 +7,6 @@ default via 192.168.1.1 dev enp4s0 src 192.168.1.13 metric 101
 192.168.1.0/24 dev enp6s0 scope link metric 501
 192.168.1.0/24 dev enp5s0 scope link metric 502
 192.168.1.1 dev enp4s0 scope link
+192.168.1.1 dev enp2s0 scope link metric 600
+192.168.1.1 dev enp3s0 scope link metric 700
 192.168.4.0/24 dev wlp0s29f7u4 proto dhcp scope link src 192.168.4.26 metric 308
